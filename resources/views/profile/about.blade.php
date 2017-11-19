@@ -1,4 +1,4 @@
-<div style="background:rgba(255, 255, 255,0.5);">   
+<div style="background:rgba(255, 255, 255,0.5);">
     <div style="background:white;padding:5px;text-align:center;box-shadow:0px 0px 1px skyblue">
         <h3>- About -</h3>
     </div>
@@ -37,7 +37,7 @@
                 <div style="background:#eee;height:8px;border-radius:10px"></div>
                 <div style="width:80%;position:relative;margin:-8px;background:darkcyan;height:8px;border-radius:10px"></div>
                 <hr>
-                <b> 50% - Angular JS</b>
+                <b> 50% - Angular JS 2</b>
                 <div style="background:#eee;height:8px;border-radius:10px"></div>
                 <div style="width:50%;position:relative;margin:-8px;background:darkcyan;height:8px;border-radius:10px"></div>
                 <hr>

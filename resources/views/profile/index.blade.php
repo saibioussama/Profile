@@ -3,7 +3,7 @@
 <style>
 
 .header{
-    height:80%;
+    height:85%;
     display:flex;
     flex-direction:column;
     justify-content:start;
@@ -39,15 +39,15 @@
         box-shadow:0px 0px 1px skyblue;
         text-align:center;
     }
-     
+
 </style>
 
 
 @section('content')
 
-@include('profile.header')
-@include('profile.about')
-@include('profile.works')
-@include('profile.footer')
+  @include('profile.header')
+  @include('profile.about')
+  @include('profile.works')
+  @include('profile.footer')
 
 @endsection
