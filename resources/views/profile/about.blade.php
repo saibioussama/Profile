@@ -1,9 +1,9 @@
-<div style="background:rgba(255, 255, 255,0.5);">
+<div style="background:rgba(255, 255, 255,0.5);" >
     <div style="background:white;padding:5px;text-align:center;box-shadow:0px 0px 1px skyblue">
         <h3>- About -</h3>
     </div>
 
-    <div class="container " style="padding:50px 0px">
+    <div class="container " style="padding:50px 10px">
         <hr>
         <div class="row">
             <div class="col-xs-3">

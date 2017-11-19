@@ -42,13 +42,13 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    @if(Auth::check())
+                    <!--@if(Auth::check())-->
                         <ul class="nav navbar-nav">
                             <li><a href="/sections">Sections</a></li> 
                             <li><a href="/subjects">Subjects</a></li>
                             <li><a href="/cours">Cours</a></li>                             
                         </ul>
-                    @endif
+                    <!--@endif-->
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">

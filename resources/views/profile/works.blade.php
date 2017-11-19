@@ -3,7 +3,7 @@
         <h3>- Works -</h3>
     </div>
 
-    <div class="container " style="padding:50px 0px;">
+    <div class="container " style="padding:50px 10px;">
 
         <div class="row">
             <div class="col-xs-3">
