@@ -6,10 +6,10 @@
     <div class="container " style="padding:50px 0px;">
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-3">
                     <b><u>Windows Store Apps :</u></b>
             </div>
-            <div class="col-md-9">
+            <div class="col-xs-9">
                     <a target="_blank" href="http://metrosahel.azurewebsites.net/">
                         <img height="50" width="50" class="img-thumbnails" title="night selfie"
                         style="border:1px solid #eee;background:darkcyan;border-radius:5px;"

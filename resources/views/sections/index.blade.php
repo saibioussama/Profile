@@ -12,9 +12,6 @@
         @forelse($sections as $section)
             <li class="list-group-item" style="margin:5px;">
                 {{$section->name}}
-
-                     
-                    
                 <form action="/sections/{{$section->id}}" method="post" class="pull-right btn-group"  >
                     {{csrf_field()}}
                     {{method_field('DELETE')}}
@@ -32,7 +29,7 @@
     </u>
     <hr>
 
-    <a href="/sections/create" class="btn btn-info " >Create new section </a>
+    <a href="/sections/create" class="btn btn-info "  >Create new section </a>
 
 </div>
 

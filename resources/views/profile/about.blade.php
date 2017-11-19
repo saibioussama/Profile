@@ -6,10 +6,10 @@
     <div class="container " style="padding:50px 0px">
         <hr>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-3">
                     <b><u>EXPERIENCE :</u></b>
             </div>
-            <div class="col-md-9">
+            <div class="col-xs-9">
                 <b>ERNST</b>
                 <p class="text-muted">.NET Developer || September 2017 - Present</p>
                 <hr>
@@ -19,20 +19,20 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-3">
                     <b><u>EDUCATION :</u></b>
             </div>
-            <div class="col-md-9">
+            <div class="col-xs-9">
                 <b>COMPUTER SCIENCE</b>
                 <p class="text-muted">Faculty of sciences, Monastir• Juin 2015 - Present</p>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-3">
                     <b><u>SKILLS :</u></b>
             </div>
-            <div class="col-md-9">
+            <div class="col-xs-9">
                 <b> 80% - ASP.NET</b>
                 <div style="background:#eee;height:8px;border-radius:10px"></div>
                 <div class="line" style="width:80%;position:relative;margin-top:-8px;background:darkcyan;height:8px;border-radius:10px"></div>
@@ -56,10 +56,10 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-xs-3">
                     <b><u>CERTIFICATIONS :</u></b>
             </div>
-            <div class="col-md-9">
+            <div class="col-xs-9">
                 <b>MVA CERTIFICATIONS</b>
                 <ul>
                     <li><a target="_blank" href="/MVA_Certifications/Asp.Net_MVC.pdf" class="text-muted">  Asp.net MVC</a></li>

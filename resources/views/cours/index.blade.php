@@ -8,8 +8,9 @@
     </h2>
     <hr>
 
-    <div class="row">
         @forelse($cours as $cour)
+    <div class="row">
+            
             <div class="col-md-10 col-md-offset-1 panel panel-default" >
                 <div class="panel-heading">
                     <b>{{$cour->title}}</b>
@@ -25,14 +26,12 @@
                 </div>
                 
             </div>
+            </div>
         @empty
             <h4>no cours found ...</h4>
-        @endforelse
-    </div>
-    
+        @endforelse    
     <hr>
-    <a href="/cours/create" class="btn btn-info " >Add new cour </a>
-
+    <a href="/cours/create" class="btn btn-info " style="margin-bottom:20px;" >Add new cour </a>
 </div>
 
 @endsection
