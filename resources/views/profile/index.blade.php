@@ -1,7 +1,18 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+@keyframes anim {
+  0% {
+    transform: scaleX(0.1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 
+.line {  
+    animation: 1s ease-out 300ms 1 anim;
+}
 .header{
     height:85%;
     display:flex;

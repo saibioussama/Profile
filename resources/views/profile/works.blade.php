@@ -15,7 +15,6 @@
                         style="border:1px solid #eee;background:darkcyan;border-radius:5px;"
                         src="https://store-images.s-microsoft.com/image/apps.6264.13510798887601877.f831a103-1302-4a3e-a6b3-a651011214b3.64e71784-b2dd-4d5f-b515-148efa35e167?w=180&h=180&q=60"/>
 
-
                         <b>Metro sahel</b>
                     </a>
                     <hr>

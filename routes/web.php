@@ -21,4 +21,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home',function(){
+    return View('profile.index');
+});
+
+Route::resource('/sections','sectionsController');
+
+Route::resource('/subjects','subjectsController');
+
+Route::resource('/cours','coursController');
+
+// Route::get('/home', 'HomeController@index')->name('home');
