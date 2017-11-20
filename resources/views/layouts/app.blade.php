@@ -7,7 +7,10 @@
     <script src="https://use.fontawesome.com/aa68243f30.js"></script>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
     <title>
         Profile
     </title>
@@ -15,7 +18,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body style="background-image:url('cover.png');">
+<body style="background-image:url('/cover.png');">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top" style="background:rgba(255,255,255,1)">
             <div class="container">
@@ -42,14 +45,14 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    <!--@if(Auth::check())-->
-                        
-                    <!--@endif-->
+                    @if(Auth::check())
                         <ul class="nav navbar-nav">
                             <li><a href="/sections">Sections</a></li> 
                             <li><a href="/subjects">Subjects</a></li>
                             <li><a href="/cours">Cours</a></li>                             
                         </ul>
+                    @endif
+                        
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
@@ -82,8 +85,10 @@
             </div>
         </nav>
 
-        @yield('content')    
-    
+        <div>
+            @yield('content')    
+        </div>
+
     </div>
 
     <!-- Scripts -->

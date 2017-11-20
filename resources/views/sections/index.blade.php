@@ -12,13 +12,16 @@
         @forelse($sections as $section)
             <li class="list-group-item" style="margin:5px;">
                 {{$section->name}}
-                <form action="/sections/{{$section->id}}" method="post" class="pull-right btn-group"  >
+                <form action="/sections/{{$section->id}}" onsubmit="return confirm('are you sure')" method="post" class="pull-right btn-group"  >
                     {{csrf_field()}}
                     {{method_field('DELETE')}}
-                    <a href="/sections/{{$section->id}}/edit" class="btn btn-sm btn-success " type="submit">  
-                        Edit
+                    <a href="/sections/{{$section->id}}/edit" class="text-success " type="submit">  
+                        <button type="button" style="border:none;background:none">  
+                             edit
+                        </button>
                     </a>
-                    <button class="btn btn-sm btn-danger" type="submit">  
+                     |
+                    <button style="border:none;background:none" class="text-danger" type="submit">  
                         delete
                     </button>
                 </form>

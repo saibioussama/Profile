@@ -8,21 +8,16 @@ use App\Subject;
 use App\Section;
 class coursController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        return View('cours.index')->with('cours',Cour::all());
+        return View('cours.index')->with([
+            'subjects'=>Subject::all(),
+            'cours'=>Cour::all(),
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         return View('cours.create')->with([
@@ -30,60 +25,51 @@ class coursController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
         Cour::create($request->all());
-        return View('cours.index')->with('cours',Cour::all());
+        return View('cours.index')->with([
+            'subjects'=>Subject::all(),
+            'cours'=>Cour::all(),
+        ]);
+     
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        return View('cours.edit')->with([
+            'cour'=>Cour::findOrFail($id),
+            'subjects'=>Subject::all(),            
+        ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, $id)
     {
-        //
+        $cour=Cour::findOrFail($id);
+        $cour->update($request->all());
+        return View('cours.index')->with([
+            'subjects'=>Subject::all(),
+            'cours'=>Cour::all(),
+        ]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
-        //
+        Cour::destroy($id);
+        return View('cours.index')->with([
+            'subjects'=>Subject::all(),
+            'cours'=>Cour::all(),
+        ]);
     }
+
 }

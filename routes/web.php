@@ -25,10 +25,10 @@ Route::get('/home',function(){
     return View('profile.index');
 });
 
-Route::resource('/sections','sectionsController');
+Route::resource('/sections','sectionsController')->middleware('auth');
 
-Route::resource('/subjects','subjectsController');
+Route::resource('/subjects','subjectsController')->middleware('auth');
 
-Route::resource('/cours','coursController');
+Route::resource('/cours','coursController')->middleware('auth');
 
 // Route::get('/home', 'HomeController@index')->name('home');
