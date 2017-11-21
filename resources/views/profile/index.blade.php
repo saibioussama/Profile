@@ -14,7 +14,7 @@
     animation: 1s ease-out 300ms 1 anim;
 }
 .header{
-    height:85%;
+    height:600px;
     display:flex;
     flex-direction:column;
     justify-content:start;

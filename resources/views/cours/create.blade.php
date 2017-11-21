@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-    <form action="/cours" method="post" class="row">
+    <form action="/cours" method="post" enctype="multipart/form-data" class="row">
         {{ csrf_field() }}
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel default">
@@ -36,10 +36,12 @@
                             </select>
                         </div>
                     </div>
-
-
                     <hr>
-                    <input type="submit" class="btn btn-success pull-right" value="add" >
+                    <div>
+                        <input type="file" class="btn btn-info" name="file1" id="file1">
+                    </div>
+                    <hr>
+                    <input type="submit" class="btn btn-success pull-right" style="width:100px;" value="add" >
                 </div>
             </div>
         </div>

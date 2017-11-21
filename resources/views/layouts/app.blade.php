@@ -20,7 +20,7 @@
 </head>
 <body style="background-image:url('/cover.png');">
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top" style="background:rgba(255,255,255,1)">
+        <nav class="navbar navbar-default navbar-static-top" style="background:#fafafa;">
             <div class="container">
                 <div class="navbar-header">
 
@@ -30,8 +30,6 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-
-                        
                     </button>
 
                     <!-- Branding Image -->
@@ -62,7 +60,8 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->name }}
+                                     <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu">

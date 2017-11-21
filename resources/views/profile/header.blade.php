@@ -2,7 +2,8 @@
 <div class="header">
 <br>
 <br>
-    <img src="https://scontent.ftun2-1.fna.fbcdn.net/v/t1.0-1/c0.10.240.240/p240x240/18118675_1303872209708213_2935433955281065987_n.jpg?oh=3dfdce4d9281f904d498a0d57a04b6e8&oe=5A917AE5" class="img" />
+    <img src="https://scontent.ftun2-1.fna.fbcdn.net/v/t1.0-1/c0.10.240.240/p240x240/18118675_1303872209708213_2935433955281065987_n.jpg?oh=3dfdce4d9281f904d498a0d57a04b6e8&oe=5A917AE5"
+         class="img-thumbnail img-circle" style="width:200px;height:200px;" />
     <br>
     <h1 style="padding:10px;border-bottom:2px solid gray;border-top:2px solid gray">- Saibi Oussama -</h1>
 

@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Cour;
 use App\Subject;
 use App\Section;
+use App\File;
+use Illuminate\Support\Facades\Storage;
+
 class coursController extends Controller
 {
 
@@ -28,7 +31,20 @@ class coursController extends Controller
 
     public function store(Request $request)
     {
-        Cour::create($request->all());
+        $cour = Cour::create($request->all());
+        $file = $request->file('file1');
+        if($file->getClientSize() > 0)
+        {
+            $path= $file->store('test');
+            $upload_file=[
+                'cour_id'=>$cour->id,
+                'name'=>$file->getClientOriginalName(),
+                'full_path'=>$path,
+                'extension'=>$file->guessClientExtension(),
+            ];
+            File::create($upload_file);
+        }
+
         return View('cours.index')->with([
             'subjects'=>Subject::all(),
             'cours'=>Cour::all(),

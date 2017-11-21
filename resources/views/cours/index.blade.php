@@ -3,13 +3,13 @@
 @section('content')
 
 <div class="container" style="background:rgba(250,250,250,0.5)">
-    <h2>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+        <h2>
         All cours :
-    </h2>
-    <hr>
-    <div class="row">
-    
-    </div>
+        </h2>
+        <a href="/cours/create" class="btn btn-info" >Add new cour </a>
+    </div>    
+    <hr>   
     @foreach(App\Section::all() as $section)
         <div class="col-xs-2">
             <b>{{$section->name}} :</b>
@@ -46,6 +46,14 @@
                                     </div>
                                     <div class="panel-body">
                                         <p>{{$cour->content}}</p>
+                                        <ul class="list-group">
+                                            @foreach(App\File::all()->where('cour_id',$cour->id) as $file)
+                                                <a href="/{{$file->full_path}}">
+                                                    <li class="list-group-item list-group-item-info list-group-item-action"
+                                                        style="width:50%">{{ $file->name }}</li>
+                                                </a>
+                                            @endforeach
+                                        </ul>
                                     </div>
                                     <div style="border-top:1px solid #eee;padding:10px;">
                                         <small class="text-muted">
@@ -68,7 +76,6 @@
     @endforeach
 
     <hr>
-    <a href="/cours/create" class="btn btn-info " style="margin-bottom:20px;" >Add new cour </a>
 </div>
 
 <script>
