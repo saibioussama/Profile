@@ -59,6 +59,7 @@
   @include('profile.header')
   @include('profile.about')
   @include('profile.works')
+  @include('profile.contact')
   @include('profile.footer')
 
 @endsection

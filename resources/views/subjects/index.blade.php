@@ -3,15 +3,18 @@
 @section('content')
 
 <div class="container" style="background:rgba(250,250,250,0.5)">
-    <h2>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+        <h2>
         All subjects :
-    </h2>
+        </h2>
+        <a href="/subjects/create" class="btn btn-info" >Add new subject </a>
+    </div>    
     <hr>
 
     
     <div class="row">
     @foreach(App\Section::all() as $section)
-        <div  class="col-xs-2" style="position:sticky;">
+        <div  class="col-xs-2" >
             <b>
                 {{$section->name}} :
             </b>
@@ -44,11 +47,6 @@
     <hr class="col-xs-12">
     @endforeach
     </div>
-    <hr>
-
-
-    <a href="/subjects/create" class="btn btn-info " >Create new subject </a>
-
 </div>
 
 @endsection

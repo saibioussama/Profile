@@ -3,9 +3,12 @@
 @section('content')
 
 <div class="container" style="background:rgba(250,250,250,0.5)">
-    <h2>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+        <h2>
         All sections :
-    </h2>
+        </h2>
+        <a href="/sections/create" class="btn btn-info" >Add new section </a>
+    </div>    
     <hr>
 
     <ul class="list-group">
@@ -31,9 +34,6 @@
         @endforelse
     </u>
     <hr>
-
-    <a href="/sections/create" class="btn btn-info "  >Create new section </a>
-
 </div>
 
 @endsection

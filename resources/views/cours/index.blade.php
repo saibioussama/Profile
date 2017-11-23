@@ -78,14 +78,16 @@
     <hr>
 </div>
 
-<script>
-    function hideDisplaybtn(id){        
+<script> 
+
+    function hideDisplaybtn(id){    
         var btn = $('#btn'+id);
         if(btn.val()=='')
             btn.val('');
         else 
             btn.val('');
         $('#body'+id).slideToggle();
+        var oldPanel = id; 
     }
 </script>
 

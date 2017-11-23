@@ -34,3 +34,6 @@ Route::resource('/cours','coursController');
 // ->middleware('auth');
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::post('/messages/store','messagesController@store');
