@@ -33,7 +33,7 @@ class coursController extends Controller
     {
         $cour = Cour::create($request->all());
         $file = $request->file('file1');
-        if($file->getClientSize() > 0)
+        if(isset($file) && $file->getClientSize() > 0)
         {
             $path= $file->store('test');
             $upload_file=[

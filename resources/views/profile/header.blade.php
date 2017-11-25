@@ -15,6 +15,9 @@
         <a href="https://www.facebook.com/ou100" target="_blank">
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
         </a>
+        <a href="https://www.github.com/saibioussama" target="_blank">
+            <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+        </a>
         <a href="https://www.linkedin.com/in/oussama-saibi-1a207a106/" target="_blank">
             <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>        
         </a>

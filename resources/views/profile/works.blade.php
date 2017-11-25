@@ -1,7 +1,9 @@
-<div style="background:rgba(255, 255, 255,0.8);">
-    <div style="background:white;padding:5px;text-align:center;box-shadow:0px 0px 1px skyblue">
+
+<div style="background:white;padding:5px;text-align:center;box-shadow:0px 0px 1px skyblue">
         <h3>- Works -</h3>
     </div>
+<div style="background:rgba(255, 255, 255,0.8);">
+    
 
     <div class="container " style="padding:50px 10px;">
 

@@ -2,8 +2,8 @@
     {{csrf_field()}}
     {{method_field('POST')}}
     <div class="col-md-6 col-md-offset-3 form-group">
-        <label for="content" style="color:white">content :</label>
-        <textarea name="content" id="content" class="form-control" placeholder="content ..." rows="3"></textarea>
+        <label for="content" style="color:white">Contact  :</label>
+        <textarea name="content" id="content" class="form-control" placeholder="Send anonymous message ..." rows="3"></textarea>
         <br>
         <input type="submit" class="btn btn-primary" value="send" style="width:100%">
     </div>
