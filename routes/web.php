@@ -25,11 +25,14 @@ Route::get('/home',function(){
     return View('profile.index');
 });
 
-Route::resource('/sections','sectionsController')->middleware('auth');
+Route::resource('/sections','sectionsController');
+// ->middleware('auth');
 
-Route::resource('/subjects','subjectsController')->middleware('auth');
+Route::resource('/subjects','subjectsController');
+// ->middleware('auth');
 
-Route::resource('/cours','coursController')->middleware('auth');
+Route::resource('/cours','coursController');
+// ->middleware('auth');
 
 Route::get('/messages',function(){
     return View('messages.index');
