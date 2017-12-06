@@ -16,13 +16,13 @@ Route::get('/profile',function(){
 });
 
 Route::get('/', function () {
-    return view('profile.index');
+    return view('cv.index');
 });
 
 Auth::routes();
 
 Route::get('/home',function(){
-    return View('profile.index');
+    return View('cv.index');
 });
 
 Route::resource('/sections','sectionsController');

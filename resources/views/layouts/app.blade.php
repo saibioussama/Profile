@@ -16,9 +16,16 @@
     </title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> 
+
+    <style>
+        .row{
+            margin:0px;
+            padding:0px;
+        }
+    </style>
 </head>
-<body style="background-image:url('/cover.png');">
+<body style="background:whitesmoke;">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top" style="background:#fafafa;">
             <div class="container">
