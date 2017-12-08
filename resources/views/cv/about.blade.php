@@ -2,10 +2,10 @@
     <h2>About </h2>
     <hr>
     <h4>
-        <b>+ Saibi Oussama</b>,  is Tunisian student, he study at Faculty of Sciences in Monastir, he's <b>21</b> years old.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
     </h4>
     <br>
     <h4>
-        <b>+</b> He enjoy solving algorithmics problems and create some applications, he always trying to learn something new ...
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
     </h4>
 </div>

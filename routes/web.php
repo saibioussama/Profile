@@ -10,20 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/profile',function(){
     return View('profile.index');
 });
 
-Route::get('/', function () {
-    return view('cv.index');
-});
 
-Auth::routes();
 
-Route::get('/home',function(){
-    return View('cv.index');
-});
 
 Route::resource('/sections','sectionsController');
 // ->middleware('auth');
@@ -42,3 +36,26 @@ Route::get('/messages',function(){
 
 
 Route::post('/messages/store','messagesController@store');
+
+
+Route::get('/home',function ($id=0) {
+    if($id == 0)
+        $cours = App\Cour::all();
+    else
+        $cours = App\Cour::all()->where('subject_id',App\Section::all()->where('id',$id)->first()->id);
+    return view('cv.index')->with([
+        'cours'=>$cours,
+        'section_id'=>$id
+    ]);
+});
+
+Route::get('/{id?}', function ($id=0) {
+    if($id == 0)
+        $cours = App\Cour::all();
+    else
+        $cours = App\Cour::all()->where('subject_id',App\Section::all()->where('id',$id)->first()->id);
+    return view('cv.index')->with([
+        'cours'=>$cours,
+        'section_id'=>$id
+    ]);
+});

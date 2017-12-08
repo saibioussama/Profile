@@ -18,6 +18,5 @@
         <a href="https://www.instagram.com/oussamasaibi" target="_blank">
             <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>        
         </a>
-        <span></span>
     </div>
 </div>

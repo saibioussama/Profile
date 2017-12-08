@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 <style>
+    a:hover ,a:link,a:active,a:focus{
+        text-decoration:none;
+        color:#515151;
+    }
     .header{
         margin:20px;
         height:150px;
@@ -17,8 +21,8 @@
         height:200px;
         position:absolute;
         right:50px;
-        border:10px solid #eee;
-        box-shadow:0 0 40px -20px black;
+        border:10px solid whitesmoke;
+        /* box-shadow:0 0 40px -20px black; */
         border-radius:100%;
     }
 
@@ -90,21 +94,59 @@
         padding:10px;
         cursor:pointer;
         text-align:center;
+        border-left:4px solid transparent;
+        transition:all 300ms ease-in-out;
     }
     .cours li:hover{
         background:#eee;
+        border-left:4px solid lightgray;
     }
 
+    .cour{
+        background:whitesmoke;
+        margin:20px 10px;
+        transition:all 200ms ease-in-out;
+        padding:10px 20px;
+        border-left:5px solid transparent;
+        
+    }
+    
+    .cour:hover{
+        border-left:5px solid darkcyan;
+    }
+    
+    .file{
+        margin:10px 0;
+        cursor:pointer;
+        background:white;
+        border:1px solid #eee;
+        padding:10px;
+        transition:all 300ms ease-in-out;
+    }
+
+    .file:hover{
+        background:darkcyan;
+        color:white;
+    }
+   
 </style>
 
 @section('content')
+
+@if(!Auth::check())
+    <a class="btn btn-default"  href="{{ route('login') }}" 
+        style="border-radius:0px;border:none;background:darkcyan;color:white;
+                position:absolute;top:0px;">Login
+    </a>
+@endif
+
 <br><br>
 @include('cv.header')
 <hr/>
 <div class="row">
     <div class="col-md-8">
         @include('cv.about')
-        @include('cv.cours')
+        @include('cv.cours',['cours'=>$cours,'section_id',$section_id])
     </div>
     <div class="col-md-4">
         @include('cv.experience')
