@@ -9,7 +9,7 @@
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel default">
                 <div class="panel-heading panel">
-                    edit new subject :
+                    edit subject :
                 </div>
                 <div class="panel-body">
                     <label for="name">Name :</label>
