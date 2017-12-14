@@ -2,10 +2,10 @@
     <h2>About </h2>
     <hr>
     <h4>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+       - <b>I'm</b> Tunisian student, i'm 21 years old and i study at Faculty of Sciences Monastir...
     </h4>
     <br>
     <h4>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+       - I enjoy solving algorithmics problems and create some applications, i always try explore new tips and tricks...
     </h4>
 </div>

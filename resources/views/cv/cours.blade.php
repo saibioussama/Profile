@@ -23,7 +23,7 @@
                     <hr style="margin-top:0px;border-top:1px solid lightgray;">
                     {{$cour->content}}
                     @foreach(App\File::all()->where('cour_id',$cour->id) as $file)
-                        <a href="/{{$file->full_path}}">
+                        <a href="/{{$file->full_path}}" target="_blank">
                             <div class="file">
                                 {{$file->name}}
                             </div>

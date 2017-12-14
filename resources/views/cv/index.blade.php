@@ -77,9 +77,7 @@
         justify-content:space-around;
         border-top:2px solid  lightgray;
     }
-    h4{
-        width:80%;
-    }
+     
     h2{
         text-align:center;
     }
