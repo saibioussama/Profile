@@ -35,7 +35,7 @@ class coursController extends Controller
         $file = $request->file('file1');
         if(isset($file) && $file->getClientSize() > 0)
         {
-            $path= $file->store('test');
+            $path= $file->store('docs');
             $upload_file=[
                 'cour_id'=>$cour->id,
                 'name'=>$file->getClientOriginalName(),

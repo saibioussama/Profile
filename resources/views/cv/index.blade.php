@@ -144,11 +144,11 @@
 @include('cv.header')
 <hr/>
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-xs-8">
         @include('cv.about')
         @include('cv.cours',['cours'=>$cours,'section_id',$section_id])
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-4">
         @include('cv.experience')
         @include('cv.formation')
         @include('cv.skills')
