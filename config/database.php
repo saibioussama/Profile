@@ -41,11 +41,11 @@ return [
     
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'eu-cdbr-azure-west-d.cloudapp.net'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'to_do_item_azure_db'),
-            'username' => env('DB_USERNAME', 'b1b3e01d198971'),
-            'password' => env('DB_PASSWORD', '1f01a988'),
+            'database' => env('DB_DATABASE', 'profiledb'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', 'root'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
